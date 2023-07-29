@@ -42,7 +42,7 @@ def temp():
 
 
 while True:
-    print("Hello and Welcome to snake task")
+    print("Hello and Welcome to Task Monkey")
     task = input("For cpu type cpu ,memory type mem  Tasks type tasks,or type in exit to exit ")
     if task.upper() == "CPU":
         print("Press q to stop displaying results ")
