@@ -7,11 +7,11 @@ def exit_on_q(key):
 
 
 palette = [
-    ('banner', 'black', 'light gray'),
-    ('streak', 'black', 'dark red'),
-    ('bg', 'black', 'dark blue'), ]
+    ('banner', 'black', 'dark green'),
+    ('streak', 'black', 'black'),
+    ('bg', 'black', 'black'), ]
 
-txt = urwid.Text(('banner', u" Hello World "), align='center')
+txt = urwid.Text(('banner', u" Hello World "), align='left')
 map1 = urwid.AttrMap(txt, 'streak')
 fill = urwid.Filler(map1)
 map2 = urwid.AttrMap(fill, 'bg')

@@ -10,9 +10,8 @@ from keyboard import is_pressed as pressed
 def cpu_info():
     cpu_percent = str(psutil.cpu_percent(3))
     cpu_clock = str(psutil.cpu_freq())
-    print(type(cpu_clock))
     # Fetch the current CPU percent usage every three seconds
-    print("Percent usage " + cpu_percent + "% \n Ghz: " + cpu_clock)
+    print("Percent usage " + cpu_percent + "% \n Mhz: " + cpu_clock[17:24])
 
 
 def mem_info():
