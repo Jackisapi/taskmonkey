@@ -16,9 +16,10 @@ def cpu_info():
 
 
 def mem_info():
-    swap_percent = str(psutil.swap_memory())
     virt_percent = str(psutil.virtual_memory())
-    print("Swap: " + swap_percent + '\n ' + virt_percent)
+    virt_percent = virt_percent[47:60]
+    print("Percent used" + virt_percent)
+    time.sleep(5)
 
 
 def task_man():
